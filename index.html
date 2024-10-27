@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Africa Business</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <header>
+    <h2 id="logo">Donate Africa</h2>
+    <nav id="web-nav">
+      
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#more-info">Our Mission</a></li>
+        <li><a href="#help">How To Help</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <a class="nav-donate" href="#donate">Apply Now</a>
+    </nav>
+    <ion-icon onclick="toggleMenu('show')" id="menu" style="color: white;" name="menu-sharp"></ion-icon>
+    <nav id="mobile-nav">
+      <ul>
+        <i onclick="toggleMenu('hide')" id="close" class="fa-solid fa-xmark"></i>
+        <li><a onclick="toggleMenu('hide')" href="#about">About Us</a></li>
+        <li><a onclick="toggleMenu('hide')" href="#more-info">Our Mission</a></li>
+        <li><a onclick="toggleMenu('hide')" href="#help">How To Help</a></li>
+        <li><a onclick="toggleMenu('hide')" href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero" class="hero">
+      <div class="overlay">
+        <h1>Empowering Africa's Future</h1>
+        <p>Join us in driving growth and transformation for our business.</p>
+        <a href="#donate" class="cta">Start Application</a>
+        <p></p>
+      </div>
+    </section>
+    <div class="info">
+      <div>
+        <h1>Invest in Impact</h1>
+        <p>Your contribution helps us scale, innovate, and create jobs.</p>
+      </div>  
+      <a href="#donate" class="cta">Apply Now</a>
+    </div>
+    <section id="more-info" class="more-info">
+      <div class="info-items">
+        <div class="i-top"></div>
+        <div class="i-bottom">
+          <p>Supporting local business growth and job creation.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="info-items">
+        <div class="i-top"></div>
+        <div class="i-bottom">
+          <p>Boosting economic development through expansion.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="info-items">
+        <div class="i-top"></div>
+        <div class="i-bottom">
+          <p>Creating sustainable impact for future generations.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="about-left">
+        <h1>About Us</h1>
+        <p>Creating sustainable impact for future generations</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facilis dolorum facere soluta tempora. Quis omnis, aspernatur accusantium facere voluptas, labore rerum earum nulla, possimus cum porro. Consectetur, possimus veniam?</p>
+      </div>
+      <div class="about-right">
+      </div>
+    </section>
+    <!--
+    <section class="mission">
+      <h1>Our Mission</h1>
+    </section>
+    -->
+    <section id="help" class="help">
+      <div class="help-overlay">
+        <h1>How to help?</h1>
+        <p>Some text here</p>
+        <div class="help-box">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, eius autem assumenda accusamus est tempore quibusdam consequuntur sint praesentium. Accusamus quidem ex quas quod praesentium eveniet veniam id ut illo.</p>
+          <a href="#" class="help-cta">Start Application</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="submit-btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <h2>FundAfrica</h2>
+        </div>
+    
+        <!-- Links Section -->
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#more-info">Mission</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#help">Apply Now</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Info</h3>
+            <ul>
+              <li><a href="tel:+1234567890">+123 456 7890</a></li>
+              <li><a href="mailto:info@company.com">info@fundafrica.com</a></li>
+              <li><a href="#">123 Street, City, Country</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+              <li><a href="#" target="_blank">Facebook</a></li>
+              <li><a href="#" target="_blank">Twitter</a></li>
+              <li><a href="#" target="_blank">Instagram</a></li>
+              <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 FundAfrica. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const mobileNav = document.getElementById('mobile-nav');
+      function toggleMenu(action) {
+        if(action === "show") { 
+          mobileNav.style.display = "block"
+        } else {
+          mobileNav.style.display = "none"
+        }
+      }
+    </script>
+</body>
+</html>
