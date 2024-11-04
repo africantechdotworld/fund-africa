@@ -1,176 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Help Africa Business</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundAfrica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
-  <header>
-    <h2 id="logo">Donate Africa</h2>
-    <nav id="web-nav">
-      
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#more-info">Our Mission</a></li>
-        <li><a href="#help">How To Help</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-      <a class="nav-donate" href="#donate">Apply Now</a>
-    </nav>
-    <ion-icon onclick="toggleMenu('show')" id="menu" style="color: white;" name="menu-sharp"></ion-icon>
-    <nav id="mobile-nav">
-      <ul>
-        <i onclick="toggleMenu('hide')" id="close" class="fa-solid fa-xmark"></i>
-        <li><a onclick="toggleMenu('hide')" href="#about">About Us</a></li>
-        <li><a onclick="toggleMenu('hide')" href="#more-info">Our Mission</a></li>
-        <li><a onclick="toggleMenu('hide')" href="#help">How To Help</a></li>
-        <li><a onclick="toggleMenu('hide')" href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="hero" class="hero">
-      <div class="overlay">
-        <h1>Empowering Africa's Future</h1>
-        <p>Join us in driving growth and transformation for our business.</p>
-        <a href="#donate" class="cta">Start Application</a>
-        <p></p>
-      </div>
-    </section>
-    <div class="info">
-      <div>
-        <h1>Invest in Impact</h1>
-        <p>Your contribution helps us scale, innovate, and create jobs.</p>
-      </div>  
-      <a href="#donate" class="cta">Apply Now</a>
-    </div>
-    <section id="more-info" class="more-info">
-      <div class="info-items">
-        <div class="i-top"></div>
-        <div class="i-bottom">
-          <p>Supporting local business growth and job creation.</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-      </div>
-      <div class="info-items">
-        <div class="i-top"></div>
-        <div class="i-bottom">
-          <p>Boosting economic development through expansion.</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-      </div>
-      <div class="info-items">
-        <div class="i-top"></div>
-        <div class="i-bottom">
-          <p>Creating sustainable impact for future generations.</p>
-          <a href="#">LEARN MORE</a>
-        </div>
-      </div>
-    </section>
-    <section id="about" class="about">
-      <div class="about-left">
-        <h1>About Us</h1>
-        <p>Creating sustainable impact for future generations</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facilis dolorum facere soluta tempora. Quis omnis, aspernatur accusantium facere voluptas, labore rerum earum nulla, possimus cum porro. Consectetur, possimus veniam?</p>
-      </div>
-      <div class="about-right">
-      </div>
-    </section>
-    <!--
-    <section class="mission">
-      <h1>Our Mission</h1>
-    </section>
-    -->
-    <section id="help" class="help">
-      <div class="help-overlay">
-        <h1>How to help?</h1>
-        <p>Some text here</p>
-        <div class="help-box">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, eius autem assumenda accusamus est tempore quibusdam consequuntur sint praesentium. Accusamus quidem ex quas quod praesentium eveniet veniam id ut illo.</p>
-          <a href="#" class="help-cta">Start Application</a>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST" class="contact-form">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your Name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="Your Email">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="submit-btn">Send Message</button>
-          </div>
-        </form>
-      </div>
-    </section>
+    <header>
+        <h2 id="logo">FundAfrica</h2>
+        <nav id="web-nav">
+            <ul>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#more-info">Offers</a></li>
+                <li><a href="#help">How It Works</a></li>
+                <li><a href="#help">Reviews</a></li>
+                <li><a href="#help">Faq</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <a class="nav-donate" href="#donate">Apply Now</a>
+        </nav>
+        <ion-icon onclick="toggleMenu('show')" id="menu" style="color: black;" name="menu-sharp"></ion-icon>
+        <nav id="mobile-nav">
+            <ul>
+                <li><i onclick="toggleMenu('hide')" id="close" style="color: white" class="fa-solid fa-xmark"></i></li>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#more-info">Offers</a></li>
+                <li><a href="#help">How It Works</a></li>
+                <li><a href="#help">Reviews</a></li>
+                <li><a href="#help">Faq</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="left">
+                <h1>Easy Access to Funding with Flexible Terms</h1>
+                <p>At FundAfrica, we believe in empowering individuals and businesses across Africa by providing accessible, flexible funding solutions. Whether you’re looking to grow a business, secure a reliable motorcycle, own a car, or rent a comfortable home, we offer financial support tailored to meet your needs with terms that work for you. Join a community committed to turning aspirations into reality and fueling progress across the continent.</p>
+                <div class="cta-box">
+                    <a href="#">Start Application</a>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="right">
+
+            </div>
+        </section>
+        <section class="features">
+            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+            <div class="feature-box">
+                <div class="feature-item">
+                    <div class="circle">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <p>Tailored Funding Solutions</p>
+                </div>
+                <div class="feature-item">
+                    <div class="circle">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <p>Flexible Repayment Terms</p>
+                </div>
+                <div class="feature-item">
+                    <div class="circle">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <p>Quick and Easy Application Process</p>
+                </div>
+                <div class="feature-item">
+                    <div class="circle">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <p>Dedicated Support Across Africa</p>
+                </div>
+            </div>
+        </section>
+        <section class="plans">
+            <h1>Our Loan offers</h1>
+            <div class="p-items">
+                <div class="p-left">
+
+                </div>
+                <div class="p-right">
+                    <h1>Business Flex</h1>
+                    <p>FundAfrica's Business Flex plan is designed for entrepreneurs and business owners aiming to start or expand their ventures. Whether it’s acquiring equipment, hiring staff, or boosting inventory, our Business Flex provides the capital you need with repayment terms that match your business's growth cycle. Empower your enterprise and create sustainable impact in your community with flexible, stress-free financing.</p>
+                    <a class="nav-donate" href="#donate">Apply Now</a>
+                </div>
+            </div>
+            <div class="p-items">
+                <div class="p-right">
+                    <h1>Motorbike Flex</h1>
+                    <p>Perfect for individuals who need affordable, reliable transportation or wish to enter the delivery and logistics industry, Motorbike Flex offers funding to acquire a motorcycle with terms that suit your budget. From entrepreneurs to everyday commuters, this plan supports your independence and economic mobility, helping you make the most of Africa’s growing transport and delivery needs.</p>
+                    <a class="nav-donate" href="#donate">Apply Now</a>
+                </div>
+                <div class="p-left">
+
+                </div>
+            </div>
+            <div class="p-items">
+                <div class="p-left">
+
+                </div>
+                <div class="p-right">
+                    <h1>Car Flex</h1>
+                    <p>Car ownership is within reach with FundAfrica’s Car Flex plan. Whether for personal use or a transport business, our Car Flex plan offers accessible financing to put you on the road quickly and affordably. With structured, manageable repayment terms, you can take control of your transportation needs without compromising your financial goals.</p>
+                    <a class="nav-donate" href="#donate">Apply Now</a>
+                </div>
+            </div>
+            <div class="p-items">
+                <div class="p-right">
+                    <h1>House Rent Flex</h1>
+                    <p>FundAfrica’s House Rent Flex is here to help you secure comfortable and affordable housing without the immediate financial strain. Whether you’re looking to rent a new home or cover rental fees during financial transitions, this plan provides the support you need to make a smooth move. With flexible terms that respect your financial capacity, we make it easier to settle in a home you can enjoy.
+                    </p>
+                    <a class="nav-donate" href="#donate">Apply Now</a>
+                </div>
+                <div class="p-left">
+
+                </div>
+            </div>
+        </section>
+        <section class="how-to">
+            <h1>Get Started Now</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum earum repudiandae sunt consequatur.</p>
+            <div class="step-container">
+                <ul>
+                    <li>
+                        <div class="step">1</div>
+                        <div class="step-body">
+                            <h2>Some Heading Here</h2>
+                            <p>Some text here</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step">2</div>
+                        <div class="step-body">
+                            <h2>Some Heading Here</h2>
+                            <p>Some text here</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step">3</div>
+                        <div class="step-body">
+                            <h2>Some Heading Here</h2>
+                            <p>Some text here</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step">4</div>
+                        <div class="step-body">
+                            <h2>Some Heading Here</h2>
+                            <p>Some text here</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="how-to-cta" href="#donate">Apply Now</a>
+        </section>
+        <section class="reviews">
+            <h1>Dreams made true with FundAfrica</h1>
+            <p>With the help of FundAfrica, dreamers from all around the world are achieving goals and aspirations that
+                were
+                previously out of reach.</p>
+            <div class="swipe-container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <div class="person swiper-slide">
+                            <div class="p-head">
+                                <img
+                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                <div>
+                                    <h2>Chidi A.</h2>
+                                    <p>🇳🇬</p>
+                                </div>
+                            </div>
+                            <div class="p-body">
+                                <p>
+                                    "FundAfrica made my dream of owning a business possible. Their Business Flex plan helped me secure the funds I needed to expand, and the repayment terms were perfectly suited to my business’s growth. Grateful for the support!"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="person swiper-slide">
+                            <div class="p-head">
+                                <img
+                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                <div>
+                                    <h2>Amina K.</h2>
+                                    <p>🇰🇪</p>
+                                </div>
+                            </div>
+                            <div class="p-body">
+                                <p>
+                                    "I used the Motorbike Flex plan to get a motorcycle for my delivery service, and it’s been a game-changer. FundAfrica’s support made it easy to set up a steady income source, and I couldn’t have done it without them!"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="person swiper-slide">
+                            <div class="p-head">
+                                <img
+                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                <div>
+                                    <h2>Sipho M.</h2>
+                                    <p>🇿🇦</p>
+                                </div>
+                            </div>
+                            <div class="p-body">
+                                <p>
+                                    "With FundAfrica’s Car Flex plan, I finally have my own car for my transport business. The process was simple, and the terms fit my budget well. I’m thankful for a reliable and supportive service!"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="person swiper-slide">
+                            <div class="p-head">
+                                <img
+                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                <div>
+                                    <h2>Fatou B.</h2>
+                                    <p>🇸🇳</p>
+                                </div>
+                            </div>
+                            <div class="p-body">
+                                <p>
+                                    "Moving into a new apartment was stressful until I found FundAfrica’s House Rent Flex plan. It made securing a good home possible without financial pressure. The support is incredible, and the team is so responsive!"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="person swiper-slide">
+                            <div class="p-head">
+                                <img
+                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                <div>
+                                    <h2>Jean-Luc T.</h2>
+                                    <p>🇨🇮</p>
+                                </div>
+                            </div>
+                            <div class="p-body">
+                                <p>
+                                    "FundAfrica understands small business needs. Thanks to their Business Flex, I was able to buy new equipment, hire staff, and grow my business. The flexible repayments are truly helpful in managing cash flow."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="person swiper-slide">
+                            <div class="p-head">
+                                <img
+                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                <div>
+                                    <h2>Mariam O.</h2>
+                                    <p>🇬🇭</p>
+                                </div>
+                            </div>
+                            <div class="p-body">
+                                <p>
+                                    "I needed reliable transportation, and FundAfrica’s Motorbike Flex was exactly what I needed. It’s empowering to have access to such a supportive platform, especially one that truly understands the African market."
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p>Below, we have collected some of our community’s frequently asked questions. If you still have questions
+                after reading this section, feel free to reach out to our support team directly!</p>
+
+            <div class="faq-item">
+                <div class="faq-question">Who can apply for funding through FundAfrica?</div>
+                <div class="faq-answer">
+                    <p>FundAfrica is open to individuals and businesses across Africa. Whether you’re looking to expand a business, acquire a vehicle, or secure housing, our platform provides tailored financial support with terms suited to a wide range of needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How long does it take to get approved for funding?</div>
+                <div class="faq-answer">
+                    <p>Our application process is designed to be quick and user-friendly. After submitting your application, approval can take a few days, depending on the details provided. Our team works efficiently to ensure you get the support you need as soon as possible.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What are the repayment options for FundAfrica loans?</div>
+                <div class="faq-answer">
+                    <p>We offer flexible repayment terms based on the specific plan you choose, such as Business Flex or Car Flex. Each plan has options designed to match your financial situation, making repayments manageable and stress-free.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Are there any fees associated with applying for a FundAfrica plan?</div>
+                <div class="faq-answer">
+                    <p>Applying is free of charge, with no hidden fees. If your application is approved, terms and any applicable fees will be clearly outlined, ensuring full transparency and allowing you to make informed decisions.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="c-left">
+                <h2>Contact Us</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="c-right"></div>
+        </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <!-- Logo -->
-        <div class="footer-logo">
-          <h2>FundAfrica</h2>
+        <div class="container">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <h2>FundAfrica</h2>
+            </div>
+
+            <!-- Links Section -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#more-info">Mission</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#help">Apply Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><a href="tel:+1234567890">+123 456 7890</a></li>
+                        <li><a href="mailto:info@company.com">info@fundafrica.com</a></li>
+                        <li><a href="#">123 Street, City, Country</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 FundAfrica. All Rights Reserved.</p>
+            </div>
         </div>
-    
-        <!-- Links Section -->
-        <div class="footer-links">
-          <div class="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#more-info">Mission</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#help">Apply Now</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Contact Info</h3>
-            <ul>
-              <li><a href="tel:+1234567890">+123 456 7890</a></li>
-              <li><a href="mailto:info@company.com">info@fundafrica.com</a></li>
-              <li><a href="#">123 Street, City, Country</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Follow Us</h3>
-            <ul class="social-icons">
-              <li><a href="#" target="_blank">Facebook</a></li>
-              <li><a href="#" target="_blank">Twitter</a></li>
-              <li><a href="#" target="_blank">Instagram</a></li>
-              <li><a href="#" target="_blank">LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-    
-        <!-- Copyright Section -->
-        <div class="footer-bottom">
-          <p>&copy; 2024 FundAfrica. All Rights Reserved.</p>
-        </div>
-      </div>
     </footer>
-    <script>
-      const mobileNav = document.getElementById('mobile-nav');
-      function toggleMenu(action) {
-        if(action === "show") { 
-          mobileNav.style.display = "block"
-        } else {
-          mobileNav.style.display = "none"
-        }
-      }
-    </script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script/main.js"></script>
+    <script src="script/faq.js"></script>
 </body>
+
 </html>
