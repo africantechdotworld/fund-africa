@@ -42,6 +42,10 @@ closeNav.onclick = function () {
 
 function toggleMenu(action) {
     mobileNav.classList.toggle('visible');
+
+    if(action === "scroll") {
+        scrollToTop();
+    }
     /*
     if (action === "show") {
         //mobileNav.style.display = "block";
