@@ -25,6 +25,12 @@
     --br-button: 100px;
 }
 
+::selection {
+    background-color: var(--primary-dark); /* Example background color (e.g., tomato) */
+    color: #ffffff; /* Example text color (e.g., white) */
+}
+
+
 * {
     padding: 0;
     margin: 0;
