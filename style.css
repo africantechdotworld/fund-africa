@@ -30,6 +30,23 @@
     color: #ffffff; /* Example text color (e.g., white) */
 }
 
+button, a, p, h1 {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+    outline: none; /* Removes the blue outline on focus */
+    box-shadow: none; /* Removes any default shadow */
+    -webkit-tap-highlight-color: transparent; /* Removes touch highlight on mobile */
+}
+
+a:focus, 
+a:active {
+    outline: none;
+    box-shadow: none;
+}
+
+
 
 * {
     padding: 0;
