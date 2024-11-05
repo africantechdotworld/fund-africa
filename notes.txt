@@ -4,3 +4,9 @@ Business Flex
 Motor bike Flex
 Car Flex
 House Rent Flex
+
+green light #66CC99
+
+green deep #339966
+
+green dark #2B8958

@@ -41,9 +41,20 @@ closeNav.onclick = function () {
 };
 
 function toggleMenu(action) {
+    mobileNav.classList.toggle('visible');
+    /*
     if (action === "show") {
-        mobileNav.style.display = "block"
+        //mobileNav.style.display = "block";
+        mobileNav.style.transform = "translateX(0)";
     } else {
-        mobileNav.style.display = "none"
-    }
+        mobileNav.style.transform = "translateX(70vw)";
+        //mobileNav.style.display = "none";
+    }*/
 }
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }

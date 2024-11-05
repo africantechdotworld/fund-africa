@@ -22,11 +22,11 @@
         <h2 id="logo">Fund<span>Africa</span></h2>
         <nav id="web-nav">
             <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#more-info">Offers</a></li>
+                <li><a onclick="scrollToTop()" href="#">Home</a></li>
+                <li><a href="#plans">Offers</a></li>
                 <li><a href="#help">How It Works</a></li>
-                <li><a href="#help">Reviews</a></li>
-                <li><a href="#help">Faq</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <li><a href="#faq">Faq</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
             <a class="nav-donate" href="#donate">Apply Now</a>
@@ -35,12 +35,12 @@
         <nav id="mobile-nav">
             <ul>
                 <li><i onclick="toggleMenu('hide')" id="close" style="color: white" class="fa-solid fa-xmark"></i></li>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#more-info">Offers</a></li>
-                <li><a href="#help">How It Works</a></li>
-                <li><a href="#help">Reviews</a></li>
-                <li><a href="#help">Faq</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a onclick="toggleMenu('scroll')" href="">Home</a></li>
+                <li><a onclick="toggleMenu('hide')" href="#plans">Offers</a></li>
+                <li><a onclick="toggleMenu('hide')" href="#help">How It Works</a></li>
+                <li><a onclick="toggleMenu('hide')" href="#review">Reviews</a></li>
+                <li><a onclick="toggleMenu('hide')" href="#faq">Faq</a></li>
+                <li><a onclick="toggleMenu('hide')" href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -49,7 +49,7 @@
         <div class="logo-circle">
             <img src="assets/5685523_54737.jpg" alt="">
         </div>
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="left">
                 <h1>Easy Access to Funding with Flexible Terms</h1>
                 <p>At FundAfrica, we believe in empowering individuals and businesses across Africa by providing accessible, flexible funding solutions. Whether you’re looking to grow a business, secure a reliable motorcycle, own a car, or rent a comfortable home, we offer financial support tailored to meet your needs with terms that work for you. Join a community committed to turning aspirations into reality and fueling progress across the continent.</p>
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </section>
-        <section class="plans">
+        <section id="plans" class="plans">
             <h1>Flexible Plans for Every Goal</h1>
             <div class="p-items">
                 <div class="p-left">
@@ -100,6 +100,7 @@
                 <div class="p-right">
                     <h1>Business Flex</h1>
                     <p>FundAfrica's Business Flex plan is designed for entrepreneurs and business owners aiming to start or expand their ventures. Whether it’s acquiring equipment, hiring staff, or boosting inventory, our Business Flex provides the capital you need with repayment terms that match your business's growth cycle. Empower your enterprise and create sustainable impact in your community with flexible, stress-free financing.</p>
+                    <div class="middle"></div>
                     <a class="nav-donate" href="#donate">Apply Now</a>
                 </div>
             </div>
@@ -107,6 +108,7 @@
                 <div class="p-right">
                     <h1>Motorbike Flex</h1>
                     <p>Perfect for individuals who need affordable, reliable transportation or wish to enter the delivery and logistics industry, Motorbike Flex offers funding to acquire a motorcycle with terms that suit your budget. From entrepreneurs to everyday commuters, this plan supports your independence and economic mobility, helping you make the most of Africa’s growing transport and delivery needs.</p>
+                    <div class="middle"></div>
                     <a class="nav-donate" href="#donate">Apply Now</a>
                 </div>
                 <div class="p-left">
@@ -120,6 +122,7 @@
                 <div class="p-right">
                     <h1>Car Flex</h1>
                     <p>Car ownership is within reach with FundAfrica’s Car Flex plan. Whether for personal use or a transport business, our Car Flex plan offers accessible financing to put you on the road quickly and affordably. With structured, manageable repayment terms, you can take control of your transportation needs without compromising your financial goals.</p>
+                    <div class="middle"></div>
                     <a class="nav-donate" href="#donate">Apply Now</a>
                 </div>
             </div>
@@ -128,6 +131,7 @@
                     <h1>House Rent Flex</h1>
                     <p>FundAfrica’s House Rent Flex is here to help you secure comfortable and affordable housing without the immediate financial strain. Whether you’re looking to rent a new home or cover rental fees during financial transitions, this plan provides the support you need to make a smooth move. With flexible terms that respect your financial capacity, we make it easier to settle in a home you can enjoy.
                     </p>
+                    <div class="middle"></div>
                     <a class="nav-donate" href="#donate">Apply Now</a>
                 </div>
                 <div class="p-left">
@@ -135,7 +139,7 @@
                 </div>
             </div>
         </section>
-        <section class="how-to">
+        <section id="help" class="how-to">
             <h1>Get Started Now</h1>
             <p>How to Get Your Loan Approved in 4 Simple Steps.</p>
             <div class="step-container">
@@ -172,7 +176,7 @@
             </div>
             <a class="how-to-cta" href="#donate">Apply Now</a>
         </section>
-        <section class="reviews">
+        <section id="review" class="reviews">
             <h1>Dreams made true with FundAfrica</h1>
             <p>With the help of FundAfrica, dreamers from all around the world are achieving goals and aspirations that
                 were
@@ -198,7 +202,7 @@
                         <div class="person swiper-slide">
                             <div class="p-head">
                                 <img
-                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                    src="assets/user.png" />
                                 <div>
                                     <h2>Amina K.</h2>
                                     <p>🇰🇪</p>
@@ -213,7 +217,7 @@
                         <div class="person swiper-slide">
                             <div class="p-head">
                                 <img
-                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                    src="assets/user.png" />
                                 <div>
                                     <h2>Sipho M.</h2>
                                     <p>🇿🇦</p>
@@ -228,7 +232,7 @@
                         <div class="person swiper-slide">
                             <div class="p-head">
                                 <img
-                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                    src="assets/user.png" />
                                 <div>
                                     <h2>Fatou B.</h2>
                                     <p>🇸🇳</p>
@@ -243,7 +247,7 @@
                         <div class="person swiper-slide">
                             <div class="p-head">
                                 <img
-                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                    src="assets/user.png" />
                                 <div>
                                     <h2>Jean-Luc T.</h2>
                                     <p>🇨🇮</p>
@@ -258,7 +262,7 @@
                         <div class="person swiper-slide">
                             <div class="p-head">
                                 <img
-                                    src="assets/0KHQvdC40LzQvtC6INGN0LrRgNCw0L3QsCAyMDI0LTA3LTMxINCyIDE1LjM4LjI1LnBuZ18xNzIyNDI5NTIwLjY0ODAxMl82==sep==.png.jpeg" />
+                                    src="assets/user.png" />
                                 <div>
                                     <h2>Mariam O.</h2>
                                     <p>🇬🇭</p>
@@ -277,7 +281,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="faq">
+        <section id="faq" class="faq">
             <h2>Frequently Asked Questions</h2>
             <p>Below, we have collected some of our community’s frequently asked questions. If you still have questions
                 after reading this section, feel free to reach out to our support team directly!</p>
@@ -311,7 +315,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="c-left">
                 <h2>Contact Us</h2>
                 <form action="#" method="POST" class="contact-form">

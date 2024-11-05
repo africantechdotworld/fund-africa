@@ -12,6 +12,7 @@ html {
     height: 100%;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 article {
@@ -43,9 +44,15 @@ header {
     right: 0;
     height: 100%;
     background-color: darkslategray;
-    width: 70%;
+    width: 70vw;
     padding: 2rem;
+    transform: translateX(70vw);
+    transition: transform 0.5s ease;
     display: none;
+}
+
+#mobile-nav.visible {
+    transform: translateX(0); /* Slide in */
 }
 
 #menu {
@@ -88,7 +95,7 @@ header {
     gap: 30px;
     margin-left: auto;
     align-items: center;
-}s
+}
 
 #web-nav ul a {
     text-decoration: none;
@@ -256,10 +263,8 @@ main {
     text-align: center;
     margin: 0 auto 80px auto;
     font-size: 2rem;
-    border: 10px solid #000;
     width: fit-content;
     padding: 0.8rem 2rem;
-    border-left: 5px solid aquamarine;
 }
 
 .p-items {
@@ -289,28 +294,39 @@ main {
     background-color: aquamarine;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    border: 30px solid darkslategray;
+    border: 15px solid darkslategray;
 }
 
-.p-items:nth-of-type(1) .p-left {
-    background-image: url('assets/business.jpg');
+.middle {
+    display: none;
+    width: 100%;
+    height: 250px;
+    background-color: aquamarine;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 15px solid darkslategray;
+}
+
+.p-items:nth-of-type(1) .p-left, .p-items:nth-of-type(1) .middle {
+    background-image: url('assets/image.jpeg');
     background-size: cover;
     background-clip: border-box ;
+    background-position: center;
 }
 
-.p-items:nth-of-type(2) .p-left {
+.p-items:nth-of-type(2) .p-left, .p-items:nth-of-type(2) .middle {
     background-image: url('assets/motorcycle.jpg');
     background-size: cover;
     background-clip: border-box ;
 }
 
-.p-items:nth-of-type(3) .p-left {
+.p-items:nth-of-type(3) .p-left, .p-items:nth-of-type(3) .middle {
     background-image: url('assets//car-loan.webp');
     background-size: cover;
     background-clip: border-box ;
 }
 
-.p-items:nth-of-type(4) .p-left {
+.p-items:nth-of-type(4) .p-left, .p-items:nth-of-type(4) .middle {
     background-image: url('assets/how-do-home-loans-work-2.webp');
     background-size: cover;
     background-clip: border-box ;
@@ -627,7 +643,7 @@ textarea {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -654,12 +670,13 @@ textarea {
     min-height: 150px;
     align-items: flex-start;
     text-align: left;
+
 }
 
 .footer-column h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #eee;
+    color: #ededed;
 }
 
 .footer-column ul {
@@ -811,6 +828,19 @@ screens */
         display: flex;
     }
 
+    .p-left {
+        display: none;
+    }
+
+    .middle {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    #mobile-nav {
+        display: block;
+    }
+
     /* arrangement and size change */
 
     .hero {
@@ -834,6 +864,7 @@ screens */
 
     .p-items>div {
         flex: 1 1 100%;
+        min-height: 200px;
     }
 
     .step-container ul {
@@ -856,8 +887,6 @@ screens */
         margin: 20px auto;
         text-align: center;
     }
-
-
 
     .step-container ul li,
     .step-body {
