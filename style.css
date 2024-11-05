@@ -29,6 +29,12 @@ header {
     align-items: center;
 }
 
+#logo span {
+    background-color: aquamarine;
+    padding: 0 1rem 0 0;
+    border: 1px solid #000;
+}
+
 #mobile-nav {
     margin-left: auto;
     position: fixed;
@@ -82,7 +88,7 @@ header {
     gap: 30px;
     margin-left: auto;
     align-items: center;
-}
+}s
 
 #web-nav ul a {
     text-decoration: none;
@@ -172,7 +178,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkslategrey;
+    background-color: #2f4f4f;
     color: #eee;
 }
 
@@ -207,6 +213,36 @@ main {
     align-items: center;
     border-radius: 30%;
     color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /*background-color: rgb(57, 179, 138);
+    /*border: 5px solid darkslategray;*/
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
+.logo-circle img {
+    width: 100px;
+    height: 100px;
+}
+
+.circle img {
+    width: 70px;
+    height: 70px;
+}
+
+.feature-item p {
+    font-weight: 600;
 }
 
 .plans {
@@ -480,7 +516,7 @@ ul:last-child .step::after {
     background-color: #f7f7f7;
     cursor: pointer;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     transition: background-color 0.3s ease;
     padding: 15px;
     border-radius: 2px 2px 0 0;
@@ -490,7 +526,7 @@ ul:last-child .step::after {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    padding: 0 15px;
+    padding: 0;
     border-radius: 0 0 2px 2px;
     background-color: #f7f7f7;
 }
@@ -698,7 +734,6 @@ screens */
     /* reduce padding */
 
     header,
-    .hero,
     .features,
     .plans,
     .how-to,
@@ -706,6 +741,10 @@ screens */
     .faq,
     .contact {
         padding: 2rem;
+    }
+
+    .hero {
+        padding: 1rem 2rem 2rem 2rem;
     }
 
     .plans>h1 {
@@ -719,6 +758,9 @@ screens */
     .reviews>h1 {
         font-size: 1.8rem;
         max-width: 100%;
+    }
+    .features h1 {
+        font-size: 1.4rem;
     }
 
     .faq>h2 {
@@ -742,6 +784,15 @@ screens */
         max-width: 100%;
     }
 
+    .faq-question {
+        font-size: 14px;
+        padding: 0;
+    }
+    .faq-answer  {
+        font-size: 12px;
+        padding: 0;
+    }
+
     /* visibility */
 
     #web-nav {
@@ -756,11 +807,15 @@ screens */
         display: none;
     }
 
+    .logo-circle {
+        display: flex;
+    }
+
     /* arrangement and size change */
 
     .hero {
         flex-direction: column;
-        margin-top: 60px;
+        margin-top: 10px;
     }
 
     .hero>div {
