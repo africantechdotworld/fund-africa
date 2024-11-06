@@ -63,12 +63,14 @@ function scrollToTop() {
     });
 }
 
-function scrollToBottom() {
-    window.scrollTo({
-        bottom: 150,
-        behavior: 'smooth'
+function scrollToSection() {
+    const section = document.getElementById("features");
+    section.scrollIntoView({
+        behavior: "smooth", // Enables smooth scrolling
+        block: "start", // Aligns to the top of the viewport
     });
 }
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
